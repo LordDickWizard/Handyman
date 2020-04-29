@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_scenes/SampleScene.unity
     guid: ea99d38323febfd4a9ac807fbf963236
+  - enabled: 1
+    path: Assets/_scenes/Josh_playground.unity
+    guid: 211f567d406b6804db2d7c12f26a7c54
   m_configObjects: {}
