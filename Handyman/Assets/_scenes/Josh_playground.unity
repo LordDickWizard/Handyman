@@ -154,7 +154,7 @@ Light:
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
+  m_CookieSize: 9.3
   m_Shadows:
     m_Type: 2
     m_Resolution: -1
