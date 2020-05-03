@@ -10,12 +10,12 @@ public class WorldObjectController : MonoBehaviour
     void Start()
     {
         Debug.Log("Hello World!");
-        //rb.AddForce(0, 200, 500);
+        rb.AddForce(0, 800, 600);
     }
 
     // Update is called once per frame for physics
     void FixedUpdate()
     {
-        rb.AddForce(0, 0, 800 * Time.deltaTime);
+        //rb.AddForce(0, 0, 800 * Time.deltaTime);
     }
 }
