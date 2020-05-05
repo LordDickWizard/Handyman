@@ -25,5 +25,9 @@ public class playerCollision : MonoBehaviour
             Debug.Log(collisionInfo.collider.name);
             movement.enabled = false;
         }
+        if (collisionInfo.collider.tag == "Score")
+        {
+
+        }
     }
 }
