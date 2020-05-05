@@ -7,8 +7,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody rb;
 
-    public float horizontalForce = 500f;
-    public float verticalForce = 500f;
+    public float horizontalForce = 10f;
+    public float verticalForce = 10f;
 
     // Start is called before the first frame update
     void Start()
