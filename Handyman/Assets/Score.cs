@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-
-    public BoxCollider player;
-    public SphereCollider interactionZone;
+    public Transform playerGameObject;
+    public Text scoreText;
 
     private int score = 0;
     private int award = 1000;
@@ -20,7 +20,7 @@ public class Score : MonoBehaviour
 // Update is called once per frame
     void Update()
     {
-        Debug.Log(score);
+        scoreText.text = score.ToString();
     }
 
     private void OnCollisionEnter(Collision collisionInfo)
@@ -30,8 +30,7 @@ public class Score : MonoBehaviour
             Debug.Log(collisionInfo.collider.name);
             if (Input.GetKey("e"))
             {
-                score = score + award;
-                Debug.Log(score);
+                score += award;
             }
         }
     }
