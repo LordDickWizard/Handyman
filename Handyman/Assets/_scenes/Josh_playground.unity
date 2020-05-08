@@ -351,9 +351,9 @@ GameObject:
   - component: {fileID: 266980815}
   - component: {fileID: 266980813}
   - component: {fileID: 266980812}
-  - component: {fileID: 266980818}
   - component: {fileID: 266980814}
   - component: {fileID: 266980819}
+  - component: {fileID: 266980818}
   m_Layer: 0
   m_Name: Goal
   m_TagString: Score
@@ -476,21 +476,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dbce2f5204465d43a7558e13d63d1b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerGameObject: {fileID: 1872821418}
-  interactionZone: {fileID: 266980817}
---- !u!135 &266980819
-SphereCollider:
+  player: {fileID: 1872821414}
+--- !u!114 &266980819
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266980811}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041dafe3534a3804ab207c524962fc6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
 --- !u!1 &380711653
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,8 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dbce2f5204465d43a7558e13d63d1b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerGameObject: {fileID: 0}
-  interactionZone: {fileID: 0}
+  player: {fileID: 0}
 --- !u!114 &380711656
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ public class playerCollision : MonoBehaviour
 {
 
     public PlayerMovement movement;
+
+    public Collision interactionObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +17,12 @@ public class playerCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    public void addScore()
+    {
+
     }
 
     private void OnCollisionEnter(Collision collisionInfo)
@@ -27,7 +34,10 @@ public class playerCollision : MonoBehaviour
         }
         if (collisionInfo.collider.tag == "Score")
         {
+            if (Input.GetKey("e"))
+            {
 
+            }
         }
     }
 }
